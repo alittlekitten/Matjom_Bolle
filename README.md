@@ -3,7 +3,8 @@
 ![img](https://img.shields.io/badge/Express--orange) ![project_start_date](https://img.shields.io/badge/Dedate%20Start%20Date-2021--09--23-informational.svg)
 
 > bookathon E조 레포지토리입니다.
-
+> 
+> nCloud micro server를 통해서 배포중입니다.
 
 [맛좀볼래 배포사이트](http://want-some-taste.o-r.kr:3000/)
 
