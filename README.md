@@ -20,7 +20,7 @@
 
 ![맛좀볼래 결과3](https://user-images.githubusercontent.com/69030160/134624111-e77c8b8d-b3aa-4bb2-9bf5-cfab404b4a35.gif)
 
-## 🥇 수상
+## 🥇 감동적인 1등 수상
 
 ![맛좀볼래 수상](https://user-images.githubusercontent.com/14370441/135716121-fab6952e-be3b-4008-b090-a9ac1ca24fc7.png)
 
