@@ -7,10 +7,17 @@ const numbers = document.body.querySelector('.numbers');
 const paper = document.body.querySelector('.paper-wrapper');
 const speed = 500;
 
-// Todo : fetch 사용해서 랜덤으로 말 뽑아오면 됨
+const cookieSound = document.getElementById('cookie-sound');
+const swipeSound = document.getElementById('swipe-sound');
+
 const fetchFortune = () => {
-    fortune.innerHTML = "매운맛";
-    numbers.innerHTML = 'Lucky numbers : 7';
+    fetch('./ovenapi/read-one-random/2')
+        .then(response => response.json())
+        .then((data) => {
+            fortune.innerHTML = data.contents;
+            const number = Math.ceil(Math.random() * 44) + 1;
+            numbers.innerHTML = `Lucky numbers : ${number}`;
+        })
 }
 
 const showFortune = () => {
@@ -21,6 +28,11 @@ const showFortune = () => {
 fetchFortune();
 
 cookie.addEventListener('click', showFortune, false);
+cookie.addEventListener('click', function() {
+  if(cookieSound.paused) {
+    cookieSound.play();
+  }
+});
 
 flip.addEventListener('click', e => {
   paper.classList.toggle('flip');
@@ -30,6 +42,7 @@ flip.addEventListener('click', e => {
 
 getNew.addEventListener('click', e => {
   cookieWrapper.classList.add('clear');
+  swipeSound.play();
   window.setTimeout(() => {
     paper.classList.remove('flip');
     flip.className = 'small front';

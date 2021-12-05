@@ -3,17 +3,48 @@
     --main-color : red;
 }
 
+.cookie__body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 20px;
+    font-family: "swgi";
+}
+.cookie__body .title {
+    font-size: 35px;
+    font-weight: 600;
+}
+.cookie__body .sub-title {
+    margin-top: 20px;
+    font-size: 22px;
+    padding-bottom: 50px;
+}
 .button-wrapper {
     display: flex;
     flex-direction: row;
 }
 
-button:disabled {
+#cookie {
+    outline: none;
+}
+
+button#cookie {
+    appearance: none;
+    background: none;
+    border: transparent;
+    cursor: pointer;
+}
+
+button#cookie:disabled {
     cursor: default;
 }
 
-#cookie {
-    outline: none;
+button#new,
+button#return {
+    font-family: "swgi";
+    font-weight: 500;
 }
 
 #flip {
@@ -22,14 +53,19 @@ button:disabled {
     position: absolute;
     transition: opacity 125ms;
     transition-delay: 375ms;
+    width: 48%;
+    height: 10%;
+    line-height: 20px;
+    font-size: 18px;
+    
 }
 
 #flip.back::before {
-    content: 'Tap here to see front';
+    content: '앞면을 보려면 여기를 탭하세요.';
 }
 
 #flip.front::before {
-    content: 'Tap here to see back';
+    content: '뒷면을 보려면 여기를 탭하세요.';
 }
 
 .clear.open #flip {
@@ -47,15 +83,15 @@ button:disabled {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 140vmax;
-    position: relative;
+    height: 40vmin;
     width: 100%;
+    position: relative;
 
     padding: 10px 0 10px 0;
 }
 
 #fortuneCookie:not(.open) {
-    transform-origin: 50% 0%;
+    transform-origin: 50% 0;
     animation-name: shake;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -70,11 +106,13 @@ button:disabled {
 #new {
     background-color: var(--main-color);
     border: 1px solid transparent;
-    border-radius: 0.25rem;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    width: 250px;
+    height: 150px;
     color: white;
-    font-size: 1rem;
     transition: 250ms;
-
     margin: 0 1rem 0 1rem;
 }
 
@@ -87,11 +125,13 @@ button:disabled {
 #return {
     background-color: grey;
     border: 1px solid transparent;
-    border-radius: 0.25rem;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    width: 250px;
+    height: 150px;
     color: white;
-    font-size: 1rem;
     transition: 250ms;
-
     margin: 0 1rem 0 1rem;
 }
 
@@ -107,7 +147,7 @@ button:disabled {
     height: 40vmin;
     width: 40vmin;
     position: absolute;
-    top: 30px;
+    top: 0;
     z-index: 5;
 }
 
@@ -292,7 +332,7 @@ button:disabled {
    }
     100% {
         background-image: linear-gradient(-45deg, transparent 46%, white 46.1%), linear-gradient(-45deg, var(--cookie-color) 39%, transparent 39.1%), radial-gradient(circle at 86% 86%, rgba(0, 0, 0, 0.25) 35%, transparent 35%), radial-gradient(circle at 90% 90%, var(--cookie-color) 40%, transparent 40%), linear-gradient(-45deg, var(--cookie-color) 40%, transparent 40.1%);
-        border-radius: 0% 100%;
+        border-radius: 0 100%;
         clip-path: none;
         margin-right: -15vmin;
         transform: rotate(-45deg);
@@ -302,7 +342,7 @@ button:disabled {
 @keyframes right-clear {
     from {
         background-image: linear-gradient(-45deg, transparent 46%, white 46.1%), linear-gradient(-45deg, var(--cookie-color) 39%, transparent 39.1%), radial-gradient(circle at 86% 86%, rgba(0, 0, 0, 0.25) 35%, transparent 35%), radial-gradient(circle at 90% 90%, var(--cookie-color) 40%, transparent 40%), linear-gradient(-45deg, var(--cookie-color) 40%, transparent 40.1%);
-        border-radius: 0% 100%;
+        border-radius: 0 100%;
         clip-path: none;
         margin-right: -15vmin;
         transform: rotate(-45deg);

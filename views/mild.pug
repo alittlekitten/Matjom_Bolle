@@ -1,0 +1,29 @@
+extends layout 
+
+block css 
+    link(rel="stylesheet", href="/stylesheets/pages/mild-cookie.css")
+
+block content
+    .cookie__body
+        .title
+            p 순한맛 쿠키
+        .sub-title
+            p 아래에 있는 쿠키를 
+                span(style="color:blue") 클릭!!!
+        #fortuneCookie
+            button(type="button")#cookie
+                .cookie
+                .cookie
+                .paper-wrapper
+                    .paper
+                        .fortune
+                        .numbers
+            button(type="button")#flip.front.small
+        audio(id='cookie-sound' src="/sounds/cookie.mp3") 
+        audio(id='swipe-sound' src="/sounds/swipe-whoosh.mp3") 
+        .button-wrapper
+            button#new(type="button") 새로 뽑기
+            form(action="/" method="get")
+                button#return(type="submit") 돌아가기
+
+    script(src='/javascripts/mild-cookie.js')

@@ -3,8 +3,31 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
+.cooking__title{
+    font-family:"swgi";
+    font-size:35px;
+    font-weight:600;
+}
+
+.cooking__subtitle {
+    font-family:"swgi";
+    margin-top: 20px;
+    font-size: 22px;
+    padding-bottom: 30px;
+}
+
+.flex__horizon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.disabled{
+    pointer-events: none;
+}
 .relative{
     position: relative;
 }
@@ -12,7 +35,7 @@
 textarea{
     font-size: inherit;
     border-radius: 20px;
-    border: none;
+    border: 20px;
 }
 
 textarea:focus{
@@ -24,8 +47,15 @@ button{
     font-size: inherit;
 }
 
+.margin6{
+    margin-top: 5%;
+}
+.margin7{
+    margin-top: 5%;
+}
+
 .input-form__font-size{
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .input-form{
@@ -38,10 +68,29 @@ button{
     margin-right: 100px;
     width: 170px;
     height: 30px;
+    font-family: "swgi";
+}
+
+.input-form__check input[type="checkbox"] {
+    display:none;
+}
+
+input[type="checkbox"] + label span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin:-2px 19px 0 0;
+    vertical-align:middle;
+    background:url('../../images/chkbox-off.png') left top no-repeat;
+    cursor:pointer;
+}
+
+input[type="checkbox"]:checked + label span {
+    background:url('../../images/chkbox-on.png') top no-repeat;
 }
 
 .input-form__input{
-    width: 1000px;
+    width: 900px;
     height: 500px;
     background-color: #ECE8E4;
     border-radius: 50px;
@@ -53,23 +102,32 @@ button{
     height: 75px;
     border-radius: 50px;
     margin-top: 30px;
+    font-family: "swgi";
+}
+
+.input-form__submit:hover{
+    background-color: #C09F80;
+    cursor: pointer;
+    transition: all .35s;
 }
 
 .input-form__text{
-    width: 650px;
-    height: 300px;
+    width: 750px;
+    height: 350px;
+    padding: 20px;
 }
 
 .input-form__result__modal{
     width: 90%;
     height: 700px;
     position: absolute;
-    top: 0px;
+    top: 150px;
     background-color: #FFFFFF;
-    background-image: url('../images/oven.jpg');
+    background-image: url('../../images/oven.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    line-height: 80px;
 }
 
 .input-form__result__cookie{
@@ -79,7 +137,7 @@ button{
 }
 
 .input-form__result__button{
-    width: 345px;
+    width: 320px;
     height: 75px;
     border-radius: 50px;
     position: absolute;
@@ -88,6 +146,17 @@ button{
     text-decoration: none;
     color: inherit;
     text-align: center;
+}
+
+.input-form__result__button:hover{
+    background-color: #C09F80;
+    transition: all .35s;
+}
+
+.input-form__result__back{
+    width: 400px;
+    height: 100px;
+    font-family: "swgi";
 }
 
 .hidden{
@@ -102,7 +171,7 @@ button{
 
 @keyframes cookie {
     0% {
-        left: 0%;
+        left: 0;
         opacity: 1;
     }
     50%{
