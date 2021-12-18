@@ -6,7 +6,7 @@
 > 
 > nCloud micro server를 통해서 배포중입니다.
 
-[맛좀볼래 배포사이트](http://want-some-taste.o-r.kr:3000/)
+[맛좀볼래 배포사이트](http://want-some-taste.o-r.kr/)
 
 ## ⚒ 기술 스택
 <div>
