@@ -6,7 +6,7 @@
 > 
 > nCloud micro server를 통해서 배포중입니다.
 
-[맛좀볼래 배포사이트](http://want-some-taste.o-r.kr/)
+#### 👉 [맛좀볼래?! 서비스 맛 보러 이동하기](http://want-some-taste.o-r.kr/)
 
 ## ⚒ 기술 스택
 <div>
@@ -15,7 +15,8 @@
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"/>
   <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white"/>
   <img src="https://img.shields.io/badge/Pug-A86454?style=flat-square&logo=Pug&logoColor=white"/>
-  <img src="https://img.shields.io/badge/nCloud-03C75A?style=flat-square&logo=naver&logoColor=white"/>
+  <img src="https://img.shields.io/badge/NCloud-03C75A?style=flat-square&logo=naver&logoColor=white"/>
+  <img src="https://img.shields.io/badge/NGINX-009639?style=flat-square&logo=nginx&logoColor=white"/>
   <img src="https://img.shields.io/badge/neDB-41454A?style=flat-square&logo=nedb&logoColor=white"/>
   <img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=Notion&logoColor=white"/>
   <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=Figma&logoColor=white"/>
